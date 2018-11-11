@@ -18,7 +18,6 @@ class TableViewController: UITableViewController, PassDataDelegate {
         let nib = UINib(nibName: "ContactCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "contactCell")
         
-        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteButtonAction))
         
     }
